@@ -1,0 +1,10 @@
+npm init -y
+npm install webpack webpack-cli --save-dev
+npm install --save-dev style-loader css-loader
+npm install --save-dev html-webpack-plugin
+npm install --save-dev webpack-dev-server
+npm init @eslint/config
+npm install --save-dev eslint-config-prettier
+npx eslint-config-prettier path/to/main.js
+git add dist && git commit -m "Initial dist subtree commit"
+git subtree push --prefix dist origin gh-pages
